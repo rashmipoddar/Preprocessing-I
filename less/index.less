@@ -54,6 +54,127 @@ table {
 }
 
 html, body {
-    height: 100%;
+		height: 100%;
+		font-size: 62.5%;
 }
 
+h3 {
+	font-size: @h3;
+}
+
+p {
+	font-size: @paraFontSize;
+	font-family: @paraFontStyle;
+	line-height: 1.5;
+}
+
+// Variables
+@paraFontStyle: 'Nunito', sans-serif;
+@paraFontSize: 1.6rem;
+@color: gray;
+@h3: 2.5rem;
+
+// Mixins
+.spacing() {
+padding: 1%;
+margin: 1%;
+}
+
+.display() {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+width: 100%;
+margin: 0 auto;
+}
+
+nav {
+display: flex;
+justify-content: flex-end;
+@media (max-width: 500px) {
+	flex-direction: column;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+	width: 10%;
+	text-align: center;
+	
+}
+}
+
+header {
+	background-color: blue;
+	.spacing();
+	div {
+		.spacing();
+		img {
+			width: 20%;
+			height: auto;
+		}
+		h1 {
+			font-size: 4rem;
+		}
+		h3 {
+			font-size: 2.5rem;
+		}
+		button {
+			background-color: @color;
+			color: white;
+			font-size: 2rem;
+		}
+	}
+}
+
+section.content {
+	.spacing();
+	.display();
+	@media (max-width: 500px) {
+		flex-direction: column;
+	}
+	div {
+		width: 40%;
+	}
+
+	div {
+		li {
+			font-size: @paraFontSize;
+			border: 1px solid black;
+			line-height: 2;
+		}
+	}
+
+}
+
+section.bottomContent {
+	.spacing();
+	table {
+		width: 100%;
+		// border: 1px solid black;
+
+		th {
+			border-top: 1px solid black;
+			font-size: 2rem;
+			line-height: 2;
+		}
+
+		td {
+			border-top: 1px solid black;
+			font-size: @paraFontSize;
+			line-height: 2;
+			text-align: center;
+		}
+	}
+
+}
+
+footer {
+	text-align: center;
+	font-size: @paraFontSize;
+
+}

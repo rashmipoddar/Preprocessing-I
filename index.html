@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
-
+  <script src="https://kit.fontawesome.com/bcd0d24c9d.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +15,78 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+    <div class="container">
+        <nav>
+          <a href="#">Intro</a>
+          <a href="#">Skills</a>
+          <a href="#">Work History</a>
+          <a href="#">Contact</a>
+        </nav>
+        <header>
+          <div>
+            <img src="profilePic.jpg" alt="Sara Lewis Pic">
+            <h1>Sara Lewis</h1>
+            <h3>Full Stack Web Developer</h3>
+            <p>Please feel free to contact me if you think I would be a good fit for your team.</p>
+            <a href="mailto:sara.lewistest@gmail.com"><button>Email</button></a>
+          </div>
+        </header>
+        <section class="content">
+          <div>
+            <h3>Intro</h3>
+            <p>I am a full stack developer with an year of experience as a back end developer. I have experience with MEAN stack. I am very focussed and enjoy solving problems. I have lived in multiple places which makes me a good cultural fit for an organisation. Please check out my Github profile and look at the kind of projects I have worked on. Please feel free to email me if you have any questions or would like to connect with me.</p>
+            <a href="https://github.com/rashmipoddar"><i class="fab fa-github"></i></a>
+          </div>
+          <div>
+            <h3>Skills</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Responsive Web Design</li>
+              <li>LESS</li>
+              <li>Node.js</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+        </section>
+        <section class="bottomContent">
+          <h3>Work History</h3>
+          <table>
+            <tr>
+              <th>Company</th>
+              <th>Position</th>
+              <th>Years</th>
+              <th>Skills</th>
+            </tr>
+            <tr>
+              <td>Uber</td>
+              <td>Front End Developer</td>
+              <td>1</td>
+              <td>Angular</td>
+            </tr>
+            <tr>
+              <td>Lyft</td>
+              <td>Front End Developer</td>
+              <td>2</td>
+              <td>Vue.js</td>
+            </tr>
+            <tr>
+              <td>Amazon</td>
+              <td>Backend Developer</td>
+              <td>2</td>
+              <td>Node.js</td>
+            </tr>
+            <tr>
+              <td>Google</td>
+              <td>Backend Developer</td>
+              <td>1</td>
+              <td>Ruby on Rails</td>
+            </tr>
+          </table>
+          
+        </section>
+        <footer>Copyright Sara Lewis</footer>
+      </div>
 </body>
 </html>

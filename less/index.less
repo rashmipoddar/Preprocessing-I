@@ -54,6 +54,164 @@ table {
 }
 
 html, body {
-    height: 100%;
+		// height: 100%;
+		font-size: 62.5%;
 }
 
+h1, h2, h3 {
+	margin-bottom: 2%;
+	font-family: @titleFontStyle;
+}
+
+h3 {
+	font-size: @h3;
+}
+
+p {
+	font-size: @paraFontSize;
+	font-family: @paraFontStyle;
+	line-height: 1.5;
+}
+
+// Variables
+@color-primary: #c7e4f3;
+@color-secondary: #0ca5f0;
+@paraFontStyle: 'Nunito', sans-serif;
+@titleFontStyle: 'Quicksand', sans-serif;
+@paraFontSize: 1.6rem;
+@h3: 2.5rem;
+@border: 1px solid black;
+
+
+// Mixins
+.spacing() {
+padding: 1%;
+margin: 1%;
+}
+
+.display() {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+width: 100%;
+margin: 0 auto;
+padding: 3%;
+}
+
+nav {
+.spacing();
+display: flex;
+justify-content: flex-end;
+@media (max-width: 500px) {
+	flex-direction: column;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+	width: 10%;
+	text-align: center;
+	font-family: @titleFontStyle;
+	@media (max-width: 500px){
+		width: 90%;
+		padding: 1%;
+	}
+	}
+}
+
+header {
+	background-color: @color-primary;
+	.spacing();
+	div {
+		.spacing();
+		img {
+			width: 20%;
+			height: auto;
+		}
+		h1 {
+			font-size: 4rem;
+		}
+		button {
+			background-color: #0ca5f0;
+			color: white;
+			font-family: @titleFontStyle;
+			font-size: 2rem;
+			.spacing();
+		}
+	}
+}
+
+section.content {
+	.spacing();
+	.display();
+	@media (max-width: 500px) {
+		flex-direction: column;
+		
+	}
+	div {
+		width: 40%;
+		@media (max-width:500px) {
+			width: 90%;
+			margin: 1%;
+		}
+		i {
+			font-size: 4rem;
+			.spacing();
+		}
+		li {
+			font-size: @paraFontSize;
+			border: @border;
+			border-bottom: 0;
+			line-height: 2;
+			padding: 1%;
+			font-family: @paraFontStyle;
+			@media (max-width: 500px) {
+				line-height: 1.5;
+			}
+		}
+		li:last-child {
+			border-bottom: @border;
+		}
+
+	}
+}
+
+section.bottomContent {
+	.spacing();
+	table {
+		width: 100%;
+
+		th {
+			border-top: @border;
+			font-size: 2rem;
+			line-height: 2;
+			background-color: @color-secondary;
+			font-family: @titleFontStyle
+		}
+
+		td {
+			border-top: @border;
+			font-size: @paraFontSize;
+			line-height: 2;
+			text-align: center;
+			font-family: @paraFontStyle;
+		}
+	}
+
+}
+
+footer {
+	.spacing();
+	text-align: center;
+	font-size: @paraFontSize;
+	background-color: @color-primary;
+	font-family: @paraFontStyle;
+	@media (max-height: 500px) {
+		margin: 1%;
+	}
+
+}

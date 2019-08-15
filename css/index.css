@@ -132,7 +132,6 @@ table {
 }
 html,
 body {
-  height: 100%;
   font-size: 62.5%;
 }
 h1,
@@ -173,6 +172,12 @@ nav a {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
 }
+@media (max-width: 500px) {
+  nav a {
+    width: 90%;
+    padding: 1%;
+  }
+}
 header {
   background-color: #c7e4f3;
   padding: 1%;
@@ -211,6 +216,12 @@ section.content {
 section.content div {
   width: 40%;
 }
+@media (max-width: 500px) {
+  section.content div {
+    width: 90%;
+    margin: 1%;
+  }
+}
 section.content div i {
   font-size: 4rem;
   padding: 1%;
@@ -223,6 +234,11 @@ section.content div li {
   line-height: 2;
   padding: 1%;
   font-family: 'Nunito', sans-serif;
+}
+@media (max-width: 500px) {
+  section.content div li {
+    line-height: 1.5;
+  }
 }
 section.content div li:last-child {
   border-bottom: 1px solid black;
@@ -255,4 +271,9 @@ footer {
   font-size: 1.6rem;
   background-color: #c7e4f3;
   font-family: 'Nunito', sans-serif;
+}
+@media (max-height: 500px) {
+  footer {
+    margin: 1%;
+  }
 }

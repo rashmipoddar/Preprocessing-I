@@ -135,6 +135,12 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
+h1,
+h2,
+h3 {
+  margin-bottom: 2%;
+  font-family: 'Quicksand', sans-serif;
+}
 h3 {
   font-size: 2.5rem;
 }
@@ -146,8 +152,11 @@ p {
 .container {
   width: 100%;
   margin: 0 auto;
+  padding: 3%;
 }
 nav {
+  padding: 1%;
+  margin: 1%;
   display: flex;
   justify-content: flex-end;
 }
@@ -162,9 +171,10 @@ nav a {
   font-size: 2rem;
   width: 10%;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
 header {
-  background-color: blue;
+  background-color: #c7e4f3;
   padding: 1%;
   margin: 1%;
 }
@@ -179,13 +189,13 @@ header div img {
 header div h1 {
   font-size: 4rem;
 }
-header div h3 {
-  font-size: 2.5rem;
-}
 header div button {
-  background-color: gray;
+  background-color: #0ca5f0;
   color: white;
+  font-family: 'Quicksand', sans-serif;
   font-size: 2rem;
+  padding: 1%;
+  margin: 1%;
 }
 section.content {
   padding: 1%;
@@ -201,10 +211,21 @@ section.content {
 section.content div {
   width: 40%;
 }
+section.content div i {
+  font-size: 4rem;
+  padding: 1%;
+  margin: 1%;
+}
 section.content div li {
   font-size: 1.6rem;
   border: 1px solid black;
+  border-bottom: 0;
   line-height: 2;
+  padding: 1%;
+  font-family: 'Nunito', sans-serif;
+}
+section.content div li:last-child {
+  border-bottom: 1px solid black;
 }
 section.bottomContent {
   padding: 1%;
@@ -217,14 +238,21 @@ section.bottomContent table th {
   border-top: 1px solid black;
   font-size: 2rem;
   line-height: 2;
+  background-color: #0ca5f0;
+  font-family: 'Quicksand', sans-serif;
 }
 section.bottomContent table td {
   border-top: 1px solid black;
   font-size: 1.6rem;
   line-height: 2;
   text-align: center;
+  font-family: 'Nunito', sans-serif;
 }
 footer {
+  padding: 1%;
+  margin: 1%;
   text-align: center;
   font-size: 1.6rem;
+  background-color: #c7e4f3;
+  font-family: 'Nunito', sans-serif;
 }
